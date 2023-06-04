@@ -15,7 +15,7 @@ export default function Home() {
                     rel="stylesheet"
                 />
             </Head>
-            <main>Home page</main>
+            <main className="h-[2000px]">Home page</main>
         </>
     );
 }
