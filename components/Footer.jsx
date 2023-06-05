@@ -14,16 +14,16 @@ const Footer = () => {
                             Find a store
                         </div>
                         <div className="font-oswald font-medium uppercase text-sm cursor-pointer">
-                            become a partner
+                            Become a partner
                         </div>
                         <div className="font-oswald font-medium uppercase text-sm cursor-pointer">
-                            sign up for email
+                            Sign up for email
                         </div>
                         <div className="font-oswald font-medium uppercase text-sm cursor-pointer">
                             send us feedback
                         </div>
                         <div className="font-oswald font-medium uppercase text-sm cursor-pointer">
-                            student discount
+                            Student discount
                         </div>
                     </div>
                     {/* MENU END */}
