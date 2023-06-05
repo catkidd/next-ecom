@@ -14,25 +14,38 @@ const Header = () => {
     const [show, setShow] = useState("translate-y-0");
     const [lastScrollY, setLastScrollY] = useState();
 
-    const navBarController = () => {
-        if (window.scrollY > 200) {
-            if (window.scrollY > lastScrollY && !mobileMenu) {
-                setShow("-translate-y-[80px]");
-            } else {
-                setShow("shadow-sm");
-            }
-        } else {
-            setShow("translate-y-0");
-        }
-        setLastScrollY(window.scrollY);
-    };
+    // const navBarController = () => {
+    //     if (window.scrollY > 200) {
+    //         if (window.scrollY > lastScrollY && !mobileMenu) {
+    //             setShow("-translate-y-[80px]");
+    //         } else {
+    //             setShow("shadow-sm");
+    //         }
+    //     } else {
+    //         setShow("translate-y-0");
+    //     }
+    //     setLastScrollY(window.scrollY);
+    // };
 
     useEffect(() => {
+        const navBarController = () => {
+            if (window.scrollY > 200) {
+                if (window.scrollY > lastScrollY && !mobileMenu) {
+                    setShow("-translate-y-[80px]");
+                } else {
+                    setShow("shadow-sm");
+                }
+            } else {
+                setShow("translate-y-0");
+            }
+            setLastScrollY(window.scrollY);
+        };
+
         window.addEventListener("scroll", navBarController);
         return () => {
-            window.addEventListener("scroll", navBarController);
+            window.removeEventListener("scroll", navBarController);
         };
-    }, [lastScrollY]);
+    }, [lastScrollY, mobileMenu]);
 
     return (
         <header
