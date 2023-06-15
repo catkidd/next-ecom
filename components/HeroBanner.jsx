@@ -2,6 +2,7 @@ import React from "react";
 import { Carousel } from "react-responsive-carousel";
 import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader
 import { BiArrowBack } from "react-icons/bi";
+import Image from "next/image";
 
 const HeroBanner = () => {
     return (
@@ -27,8 +28,11 @@ const HeroBanner = () => {
                     </div>
                 )}>
                 <div>
-                    <img
+                    <Image
                         src="/slide-2.png"
+                        alt="slide-2"
+                        width="1200"
+                        height="525"
                         className="aspect-[16/10] md:aspect-auto object-cover"
                     />
                     <div className="px-[15px] md:px-[40px] py-[10px] md:py-[25px] font-oswald bg-white absolute bottom-[20px] md:bottom-[70px] left-0 text-black/[0.9] text-[15px] md:text-[30px] uppercase font-medium cursor-pointer hover:opacity-90">
@@ -37,8 +41,11 @@ const HeroBanner = () => {
                 </div>
 
                 <div>
-                    <img
+                    <Image
                         src="/slide-3.png"
+                        alt="slide-1"
+                        width="1200"
+                        height="525"
                         className="aspect-[16/10] md:aspect-auto object-cover"
                     />
                     <div className="px-[15px] md:px-[40px] py-[10px] md:py-[25px] font-oswald bg-white absolute bottom-[25px] md:bottom-[75px] left-0 text-black/[0.9] text-[15px] md:text-[30px] uppercase font-medium cursor-pointer hover:opacity-90">
@@ -47,8 +54,11 @@ const HeroBanner = () => {
                 </div>
 
                 <div>
-                    <img
+                    <Image
                         src="/slide-1.png"
+                        alt="slide-1"
+                        width="1200"
+                        height="525"
                         className="aspect-[16/10] md:aspect-auto object-cover"
                     />
                     <div className="px-[15px] md:px-[40px] py-[10px] md:py-[25px] font-oswald bg-white absolute bottom-[25px] md:bottom-[75px] left-0 text-black/[0.9] text-[15px] md:text-[30px] uppercase font-medium cursor-pointer hover:opacity-90">

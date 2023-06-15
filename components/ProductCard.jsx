@@ -1,3 +1,4 @@
+import Image from "next/image";
 import Link from "next/link";
 import React from "react";
 
@@ -7,7 +8,13 @@ const ProductCard = () => {
             <Link
                 href="/product/1"
                 className="transform overflow-hidden bg-white duration-300 hover:scale-105 cursor-pointer">
-                <img className="w-full" src="/product-1.webp" alt="sample product" />
+                <Image
+                    className="w-full"
+                    src="/product-1.webp"
+                    alt="sample product"
+                    width="592"
+                    height="592"
+                />
                 <div className="p-4 text-black/[0.9]">
                     <h2 className="text-lg font-medium">product name</h2>
                     <div className="flex items-center text-black/[0.5]">
